@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 10 Months ❤️</title>
+<title>Happy 10th Monthsaryy❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -150,10 +150,10 @@ body{
     z-index:20;
 }
 
-.letter h1{
+.letter h3{
     font-family:'Great Vibes',cursive;
     text-align:center;
-    font-size:70px;
+    font-size:50px;
     color:#ff4f91;
     text-shadow:
         0 0 10px #ff7eb6,
@@ -303,16 +303,20 @@ body{
 <body>
 
 <!-- Background Music -->
-<audio id="bgMusic" loop>
-    <!-- Replace with your own romantic MP3 -->
-    <source src="your-music.mp3" type="audio/mpeg">
-</audio>
+<iframe
+    id="ytplayer"
+    width="0"
+    height="0"
+    style="position:absolute;border:0;"
+    allow="autoplay"
+    src="">
+</iframe>
 
 <!-- Floating Hearts -->
 <div class="hearts" id="hearts"></div>
 
 <!-- Floating Badge -->
-<div class="badge">❤️ I Love You ❤️</div>
+<div class="badge">❤️ I Love You Baby ❤️</div>
 
 <div class="container" id="container">
 
@@ -330,29 +334,38 @@ body{
 
     <div class="letter">
 
-        <h1>Happy 10 Months ❤️</h1>
+        <h3>Happy 10th Monthsary❤️</h3>
 
         <div class="message">
             <p>
-                My Love,
+                Hii my Baby Lovelove,
             </p>
 
             <br>
 
             <p>
                 <!-- PLACEHOLDER FOR YOUR LETTER -->
-                Replace this section with your heartfelt message.
-                Write about your favorite memories together,
-                the laughter you shared, the challenges you've
-                overcome, and how much she means to you.
+                Hii babyyy, happy happy 10th monthsaryy!! 
+                It's almost been a year naa, we've been through so much together.
+                Thankyou for always being there for me, helping me and supporting me in your own way.
+                Thankyou for making me the better version of me, helping me be a better partner for you.
+                Thankyou for understanding me in every point and in every view, and for your unwavering love and lengthening patience.
+                I promise to be always with you, to support you, to help you,to be your comfort, your safe place, your pahinga.
+                I love you and I'll love you even more as the days goes by.
+
             </p>
 
             <br>
 
             <p>
-                Every day with you feels brighter, warmer,
+                Every day with you feels brighter, warmer, comfy, 
                 and more beautiful. Thank you for making these
-                ten months so unforgettable. ❤️
+                ten months so unforgettable. 
+                
+                I love youu soo soo soooo muuch my Honeeyyy!!!❤️
+
+
+                Your loving Baby shoti❤️
             </p>
         </div>
 
@@ -360,13 +373,14 @@ body{
 
             <!-- Replace these photos -->
 
-            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800" alt="">
+            <img src="image/pic1.jpg" alt="">
 
-            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800" alt="">
+            <img src="image/pic5.jpg" alt="">
 
-            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800" alt="">
+            <img src="image/pic4.jpg" alt="">
 
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800" alt="">
+            <img src="image/pic3.jpg" alt="">
+            <img src="image/pic2.jpg" alt="">
 
         </div>
 
@@ -413,13 +427,14 @@ setInterval(createHeart,250);
 
 const btn = document.getElementById("openBtn");
 const container = document.getElementById("container");
-const music = document.getElementById("bgMusic");
+const player = document.getElementById("ytplayer");
 
 btn.addEventListener("click",()=>{
 
     container.classList.add("open");
 
-    music.play().catch(()=>{});
+    player.src =
+    "https://www.youtube.com/embed/bSz1Liag8No?autoplay=1&loop=1&playlist=bSz1Liag8No&controls=0&modestbranding=1&rel=0";
 
     btn.style.pointerEvents="none";
 });
